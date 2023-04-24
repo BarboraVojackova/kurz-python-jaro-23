@@ -11,11 +11,9 @@ for jmeno, body in points.items():
         prospech[jmeno] = 'Pass'
     else:
         prospech[jmeno] = 'Fail'
-# print(prospech)
+print(prospech)
 
 # Vyvoření nového JSON souboru
 import json
-prospech = {}
-
 with open ("prospech.json", mode="w", encoding="utf-8") as soubor:
     json.dump(prospech, soubor, ensure_ascii=False)
